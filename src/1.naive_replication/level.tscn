@@ -1,0 +1,16 @@
+[gd_scene format=2]
+
+[node name="Level" type="Spatial"]
+
+[node name="CSGBox" type="CSGBox" parent="."]
+width = 24.6222
+height = 0.23728
+depth = 24.6628
+
+[node name="Spawnpoints" type="Spatial" parent="."]
+
+[node name="Spatial" type="Spatial" parent="Spawnpoints"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0.05, 0 )
+
+[node name="Spatial2" type="Spatial" parent="Spawnpoints"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0.05, 0 )

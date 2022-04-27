@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://1.naive_replication/net_manager.gd" type="Script" id=1]
+[ext_resource path="res://1.naive_replication/level.tscn" type="PackedScene" id=2]
+
+[node name="main" type="Spatial"]
+script = ExtResource( 1 )
+host = true
+
+[node name="players" type="Spatial" parent="."]
+
+[node name="Level" parent="." instance=ExtResource( 2 )]
